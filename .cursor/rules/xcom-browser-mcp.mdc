@@ -1,0 +1,12 @@
+---
+description: For X (x.com) URLs, use the built-in browser MCP
+alwaysApply: true
+---
+
+# X.com URL handling
+
+If a source URL is on `x.com` (including `/status/` links), **use the built-in browser MCP** to access and extract the post text.
+
+- Do **not** use Firecrawl for `x.com` links (it is blocklisted / unreliable).
+- If you hit cookie/login interstitials, interact via the browser MCP (accept cookies, then re-snapshot) until the post text is visible.
+

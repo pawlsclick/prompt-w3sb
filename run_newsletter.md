@@ -15,6 +15,7 @@ Follow this workflow to generate the weekly web3 security newsletter. All output
   - Sections and ordering
   - Entry format (title, summary, URL)
   - Tone and word-count limits
+- **X.com sources**: if a URL is on `x.com` (including `/status/` links), use the **built-in browser MCP** to access/extract the post text (Firecrawl is blocklisted for `x.com`).
 
 Before moving between phases, confirm that the expected input file for the next phase exists and is non-empty.
 
