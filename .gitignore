@@ -1,0 +1,18 @@
+# Exclude newsletter output files
+web3*.md
+plan*.md
+draft*.md
+final*.md
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Temporary files
+newsletter
+todays_urls.txt
+
+# Other temporary/generated files
+*.log
