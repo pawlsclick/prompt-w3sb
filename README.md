@@ -56,7 +56,7 @@ The concrete steps for each run live in `run_newsletter.md`. The detailed style 
 - **S3 upload (podcast bucket)**  
   `scripts/copy_to_w3sb_bucket.sh` copies a local file to the `w3sb-bucket-pod` S3 bucket (region `eu-north-1`). Uses AWS CLI with credentials from `~/.aws`.
   - **Usage**: `./scripts/copy_to_w3sb_bucket.sh <local_file> [s3_key]`. If `s3_key` is omitted, the object key is the basename of the local file.
-  - **Examples**: `./scripts/copy_to_w3sb_bucket.sh ./output/podcast_0x19.mp3` or `./scripts/copy_to_w3sb_bucket.sh ./output/podcast_0x19.mp3 0x19-w3sb.m4a`.
+  - **Examples**: `./scripts/copy_to_w3sb_bucket.sh ./podcast_output/podcast_0x19.mp3` or `./scripts/copy_to_w3sb_bucket.sh ./podcast_output/podcast_0x19.mp3 0x19-w3sb.m4a`.
   - **Output**: Prints the object URL (`https://w3sb-bucket-pod.s3.eu-north-1.amazonaws.com/<key>`) when done; the last line is the URL only, so you can capture it with `| tail -1`.
 
 ---

@@ -59,12 +59,12 @@ Paragraph is often client-rendered, so `--url` may not receive the article body 
 **Options:**
 
 - `--config PATH` — Path to podcast config YAML (default: `podcast_config.yaml`).
-- `--output PATH` — Full path for the output MP3 (default: `output/podcast_<slug>.mp3`).
-- `--output-dir DIR` — Directory for the default output file (default: `output`).
+- `--output PATH` — Full path for the output MP3 (default: `podcast_output/podcast_<slug>.mp3`).
+- `--output-dir DIR` — Directory for the default output file (default: `podcast_output`).
 
 ## Output
 
-The script writes a single MP3 file (e.g. `output/podcast_Web3_Security_Bulletin.mp3`). It prints the path and size when done. Open the file in any audio player or move it wherever you like.
+The script writes a single MP3 file (e.g. `podcast_output/podcast_Web3_Security_Bulletin.mp3`). It prints the path and size when done. Open the file in any audio player or move it wherever you like.
 
 ## Troubleshooting
 

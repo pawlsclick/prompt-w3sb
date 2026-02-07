@@ -7,8 +7,8 @@
 #   ./scripts/copy_to_w3sb_bucket.sh <local_file> [s3_key]
 #
 # Examples:
-#   ./scripts/copy_to_w3sb_bucket.sh ./output/podcast_0x19.mp3
-#   ./scripts/copy_to_w3sb_bucket.sh ./output/podcast_0x19.mp3 0x19-w3sb.m4a
+#   ./scripts/copy_to_w3sb_bucket.sh ./podcast_output/podcast_0x19.mp3
+#   ./scripts/copy_to_w3sb_bucket.sh ./podcast_output/podcast_0x19.mp3 0x19-w3sb.m4a
 
 set -euo pipefail
 
