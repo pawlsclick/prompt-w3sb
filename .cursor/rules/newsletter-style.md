@@ -44,7 +44,7 @@ Organize the newsletter into these sections in order. Skip a section entirely if
    - Root cause analysis 
    - Blockchain investigations 
 4. `## We must have regulations`
-   - Policy changes, regulatory guidance, enforcement actions
+   - Policy changes, regulatory guidance, enforcement actions, compliance
    - Compliance with regulations and laws
 5. `## VCs & funding`
    - Venture rounds, M&A, major partnerships
@@ -55,11 +55,6 @@ Organize the newsletter into these sections in order. Skip a section entirely if
 7. `## Etc`
    - Catch-all if an article does not fit in a section above
 
-
-
-If you need a dedicated exploits section for a heavy week of incidents:
-- Use `## Exploits & Hacks` before `## Security & Research`
-
 ## Entry format
 
 Each article becomes exactly one entry:
@@ -68,7 +63,7 @@ Each article becomes exactly one entry:
    - Format: `**Short, concrete headline**  ` (two spaces at end for line break)
    - Focus on the main event or key takeaway.
 
-2. **Summary paragraph (≤ 70 words)**  
+2. **Summary paragraph (≤ 100 words)**  
    - One paragraph, plain text.
    - Start with the author or publication when known, e.g.  
      - `Rekt News explains how...`  
@@ -83,15 +78,15 @@ Each article becomes exactly one entry:
 Example entry:
 
 ```markdown
-**The Truebit Exploit Explained**  
-Cantina breaks down how an unchecked addition in a 0.5.3 pricing function drove TRU's purchase price to zero, enabling unlimited minting and a $26M loss, plus maintenance lessons for legacy contracts.  
-`https://cantina.xyz/blog/the-truebit-exploit-explained`
+**2026 Crypto Crime Report: Nation-State Threats Reach Record Levels**
+Chainalysis released its 2026 Crypto Crime Report documenting record illicit activity, with North Korean nation-state hackers stealing $2.02 billion—a 51% year-over-year increase, pushing historical totals to $6.75 billion. Chinese money laundering networks emerged as dominant criminal infrastructure providers offering laundering-as-a-service. Stablecoins now comprise 84% of all illicit transaction volume. While illicit activity remains below 1% of total crypto volume, professionalized criminal ecosystems targeting sanctions evasion and terrorism financing demand enhanced law enforcement cooperation. 
+`https://www.chainalysis.com/blog/2026-crypto-crime-report-introduction/`
 ```
 
 ## Tone and style
 
 - **Narration**: Third person, calm, and factual.
-- **Voice**: Knowledgeable observer, not a marketing voice.
+- **Voice**: Industry insider, technical, not a marketing voice.
 - **Perspective**: No first-person singular/plural in the newsletter body.
 - **Hype**: Avoid phrases like “groundbreaking”, “revolutionary”, “game-changing”.
 - **Clarity**: Prefer simple verbs (`is`, `has`, `shows`) over elaborate phrasing.
@@ -119,7 +114,7 @@ Before calling the newsletter “final”, quickly verify:
 - [ ] The title line includes the correct date range.
 - [ ] Sections are in the standard order and only included when they have content.
 - [ ] Every entry follows the title / summary / URL pattern.
-- [ ] Summaries are under 70 words.
+- [ ] Summaries are under 100 words.
 - [ ] Tone is factual and non-promotional.
 - [ ] URLs are present and backticked.
 

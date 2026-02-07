@@ -16,3 +16,12 @@ todays_urls.txt
 
 # Other temporary/generated files
 *.log
+
+# Environment and secrets (do not commit API keys)
+.env
+
+# Podcast output
+podcast_output/
+live_sync_newsletter/
+podcast_notes.md
+readwise_mcp_capabilities.md

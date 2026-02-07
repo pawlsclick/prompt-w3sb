@@ -47,6 +47,18 @@ The concrete steps for each run live in `run_newsletter.md`. The detailed style 
 - `.gitignore`  
   Keeps weekly, date‑stamped outputs and scratch files out of git so the repo stays small and focused.
 
+- **Live newsletter fetch**  
+  `scripts/fetch_newsletter_md.py` fetches published Paragraph newsletters via [Firecrawl](https://firecrawl.dev) and writes cleaned markdown to `live_sync_newsletter/`. One file per URL (e.g. `0x19-web3-security-bulletin.md`). Useful for turning past issues into podcast input or for agent parsing.
+  - **Setup**: Set `FIRECRAWL_API_KEY` (env or `.env`). Install deps: `pip install -r requirements_podcast.txt`.
+  - **Usage**: `python scripts/fetch_newsletter_md.py "https://paragraph.com/@w3sb/0x19-web3-security-bulletin"` → writes `live_sync_newsletter/0x19-web3-security-bulletin.md`. Use `--out-dir` for a different directory, `--no-validate` to skip section/summary count check.
+  - **Behavior**: Strips nav and trailing junk (footer, Cloudflare text, etc.); keeps all sections including embeds. Output is UTF‑8 markdown; existing files are overwritten. See `run_fetch_newsletter.md` for more detail.
+
+- **S3 upload (podcast bucket)**  
+  `scripts/copy_to_w3sb_bucket.sh` copies a local file to the `w3sb-bucket-pod` S3 bucket (region `eu-north-1`). Uses AWS CLI with credentials from `~/.aws`.
+  - **Usage**: `./scripts/copy_to_w3sb_bucket.sh <local_file> [s3_key]`. If `s3_key` is omitted, the object key is the basename of the local file.
+  - **Examples**: `./scripts/copy_to_w3sb_bucket.sh ./output/podcast_0x19.mp3` or `./scripts/copy_to_w3sb_bucket.sh ./output/podcast_0x19.mp3 0x19-w3sb.m4a`.
+  - **Output**: Prints the object URL (`https://w3sb-bucket-pod.s3.eu-north-1.amazonaws.com/<key>`) when done; the last line is the URL only, so you can capture it with `| tail -1`.
+
 ---
 
 ## Files intentionally **not** tracked

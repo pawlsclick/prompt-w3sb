@@ -1,0 +1,12 @@
+# ElevenLabs voice IDs for the two podcast hosts.
+# Get voice IDs from the ElevenLabs dashboard or run: python scripts/list_voices.py
+speaker_a:
+  voice_id: "mUfWEBhcigm8YlCDbmGP"  # Joey
+  name: "Host"
+
+speaker_b:
+  voice_id: "XrExE9yKIg1WjnnlVkGX"   # Matilda
+  name: "Co-host"
+
+# Optional: tone for dialogue generation. One of: professional, casual, wry
+dialogue_style: professional

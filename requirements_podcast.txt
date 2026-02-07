@@ -1,0 +1,10 @@
+# Newsletter-to-podcast script (scripts/newsletter_to_podcast.py)
+elevenlabs>=1.0.0
+python-dotenv>=1.0.0
+PyYAML>=6.0
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+pydub>=0.25.0
+
+# Fetch live newsletters (scripts/fetch_newsletter_md.py)
+firecrawl-py>=1.0.0
